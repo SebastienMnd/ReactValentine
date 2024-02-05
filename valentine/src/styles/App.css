@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+
+  height: 100vh;
+  background: #f8f4ff;
+}
+
+main img {
+  filter: drop-shadow(3px 3px 15px rgb(49, 49, 49));
+}
+
+main h1, main h2 {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main h1 {
+    color: red;
+}
+
+main div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+main button {
+  display: block;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 15px;
+  box-shadow: 3px 3px 15px 5px rgb(182, 182, 182);
+  width: 150px;
+  height: 75px;
+
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-size: 2rem;
+
+  color: white;
+
+  transition: 0.2s ease-in;
+}
+
+main button.success {
+  background: green;
+}
+
+main button.error {
+  background: red;
+}
